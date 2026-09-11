@@ -1,1 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  background: linear-gradient(270deg, #0f0f1a, #1a1a2e, #ff4655);
+  background-size: 600% 600%;
+  animation: gradientMove 20s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientMove {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+section { padding: 60px; text-align: center; }
+.hero { padding: 100px; }
+.hero h1 { font-size: 4em; color: #ff4655; }
+button {
+  background: #ff4655;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover { background: #00e5ff; }
+.product-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.product-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.product-card img { width: 100%; border-radius: 10px; }
+.product-card h3 { color: #ff4655; }
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #ff4655;
+}
 
